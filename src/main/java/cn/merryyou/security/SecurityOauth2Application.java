@@ -41,4 +41,14 @@ public class SecurityOauth2Application {
 
         return authentication;
     }
+
+    @GetMapping("/forbidden")
+    public String getForbidden() {
+        return "forbidden";
+    }
+
+    @GetMapping("/permitAll")
+    public String getPermitAll() {
+        return "permitAll";
+    }
 }
